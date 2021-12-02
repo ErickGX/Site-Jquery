@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Galeria Armas Brancas</title>
+	<style>
+		body {
+			margin: 0;
+		}
+
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			background-color: #333;
+			overflow: hidden;
+		}
+
+		li a,
+		.dropbtn {
+			display: inline-block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover {
+			background-color: #111;
+		}
+
+		li {
+			float: left;
+			width: 20%;
+			text-align: center;
+		}
+
+		.dropdown {
+			display: inline-block;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.dropdown-content a:hover {
+			background-color: #f1f1f1;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+
+		.gallery {
+			border: 1px solid #ccc;
+		}
+
+		.gallery:hover {
+			border: 1px solid #777;
+		}
+
+		.gallery img {
+			width: 100%;
+			height: auto;
+		}
+
+		.desc {
+			padding: 15px;
+			text-align: center;
+
+		}
+
+		.clearfix:after {
+
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		.responsive {
+			padding: 0 6px;
+			float: left;
+			width: 24.99999%;
+		}
+
+		@media only screen and (max-width: 700px) {
+			.responsive {
+				width: 49.99999%;
+				margin: 6px 0;
+			}
+		}
+
+		@media only screen and (max-width: 500px) {
+			.responsive {
+				width: 100%;
+			}
+		}
+
+		img {
+			opacity: 0.1;
+
+		}
+
+		img:hover {
+			opacity: 1;
+		}
+	</style>
+
+
+
+</head>
+
+<body>
+	<ul>
+		<li><a href="pagChinesa.html">Armas Chinesas</a></li>
+		<li><a href="pagRomana.html">Armas Romanas</a></li>
+		<li class="dropdown">
+			<a class="dropbtn" href="pagJaponesa.html">Armas Japonesas</a>
+			<div class="dropdown-content">
+				<a href="pagJaponesa.html">Kurisagama</a>
+				<a href="pagJaponesa2.html">Neko-te</a>
+				<a href="pagJaponesa3.html">Kusari-Fundo</a>
+			</div>
+		</li>
+		<li><a href="index.html">Pagina Principal</a></li>
+		<li><a href="formulario.html">Formulario</a></li>
+	</ul>
+
+
+
+	<div class="responsive">
+		<div class="gallery">
+			<a href="img_lights.jpg" target="_blank">
+				<img src="galeria/adagapugio1.jpg" alt="Northern Lights" width="600" height="400">
+			</a>
+			<div class="desc">
+				Pugio Romano arma curta usada como apoio
+			</div>
+		</div>
+	</div>
+
+	<div class="responsive">
+		<div class="gallery">
+			<a href="img_lights.jpg" target="_blank">
+				<img src="galeria/dardo1.jpg" alt="Northern Lights" width="600" height="400">
+			</a>
+			<div class="desc">
+				Dardo com corda Chines Usado no kong-Fu
+			</div>
+		</div>
+	</div>
+
+	<div class="responsive">
+		<div class="gallery">
+			<a href="img_lights.jpg" target="_blank">
+				<img src="galeria/dardo2.jpg" alt="Northern Lights" width="600" height="400">
+			</a>
+			<div class="desc">
+				Dardo com corda Chines Usado no kong-Fu
+			</div>
+		</div>
+
+	</div>
+	<div class="responsive">
+		<div class="gallery">
+			<a href="img_lights.jpg" target="_blank">
+				<img src="galeria/gladio2.jpg" alt="Northern Lights" width="600" height="400">
+			</a>
+			<div class="desc">
+				Espada Gladio Romano
+			</div>
+		</div>
+	</div>
+
+	<div class="responsive">
+		<div class="gallery">
+			<a href="img_lights.jpg" target="_blank">
+				<img src="galeria/KunoichiNeko2.jpg" alt="Northern Lights" width="600" height="400">
+			</a>
+			<div class="desc">
+				Neko-Te Usado por Kunoichis (Ninjas mulheres)
+			</div>
+		</div>
+	</div>
+
+	<div class="responsive">
+		<div class="gallery">
+			<a href="img_lights.jpg" target="_blank">
+				<img src="galeria/Kusarigama1.jpg" alt="Northern Lights" width="600" height="400">
+			</a>
+			<div class="desc">
+				Foice com Corrente Usada por ninjas
+			</div>
+		</div>
+	</div>
+
+	<div class="responsive">
+		<div class="gallery">
+			<a href="img_lights.jpg" target="_blank">
+				<img src="galeria/Kusarigama2.jpg" alt="Northern Lights" width="600" height="400">
+			</a>
+			<div class="desc">
+				Foice com Corrente Usada por ninjas
+			</div>
+		</div>
+	</div>
+
+	<div class="responsive">
+		<div class="gallery">
+			<a href="img_lights.jpg" target="_blank">
+				<img src="galeria/KunoichiNeko1.jpg" alt="Northern Lights" width="600" height="400">
+			</a>
+			<div class="desc">
+				Neko-Te Usado por Kunoichis (Ninjas mulheres)
+			</div>
+		</div>
+	</div>
+
+	<div class="responsive">
+		<div class="gallery">
+			<a href="img_lights.jpg" target="_blank">
+				<img src="galeria/martelo2.jpg" alt="Northern Lights" width="600" height="400">
+			</a>
+			<div class="desc">
+				Bola de ferro com corda uso semelhante ao dardo com corda
+			</div>
+		</div>
+	</div>
+
+	<div class="responsive">
+		<div class="gallery">
+			<a href="img_lights.jpg" target="_blank">
+				<img src="galeria/Kurasi-Fundo2.jpg" alt="Northern Lights" width="600" height="400">
+			</a>
+			<div class="desc">
+				Corrente com pesos usada para imobilização
+			</div>
+		</div>
+	</div>
+
+	<div class="responsive">
+		<div class="gallery">
+			<a href="img_lights.jpg" target="_blank">
+				<img src="galeria/Kusari-Fundo1.jpg" alt="Northern Lights" width="600" height="400">
+			</a>
+			<div class="desc">
+				Corrente com pesos usada para imobilização
+			</div>
+		</div>
+	</div>
+
+
+	<div class="responsive">
+		<div class="gallery">
+			<a href="img_lights.jpg" target="_blank">
+				<img src="galeria/nuchaku2.png" alt="Northern Lights" width="600" height="400">
+			</a>
+			<div class="desc">
+				Nuchaku chines usado no kong-Fu
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>

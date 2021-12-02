@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Avaliação do site</title>
+<style>
+	* {
+		box-sizing: border-box;
+	}
+	input[type=text], select, textarea {
+		width: 100%;
+		padding: 12px;
+		border: 1px solid #ccc;
+		background-color: lightcyan;
+		border-radius: 4px;
+		resize: vertical;
+	}
+	input[type=text]:focus {
+		background-color: lightgreen;
+		}
+	label {
+		padding: 12px 12px 12px 0;
+		display: inline-block;
+	}
+
+	input[type=submit] {
+		font-size: 1.3em; /*Aumenta em % o tamanho da fonte*/
+		background-color: #4caf50;
+		color: white;
+		border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+        padding: 12px 20px;
+       
+	}
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+
+    }
+
+    .container {
+       border-radius: 5px;
+       background-color: lightcoral;
+       padding: 20px; 
+    }
+        
+    .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+
+    }
+
+    .col-75 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+    }
+ /*Limpa floats depois das colunas*/
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+ /*Layout responsivo - quando o navegador tem menos de 600 px de largura , faz com que as colunas fiquem uma sobre as outras ao inves de uma do lado da outra*/   
+
+    @media screen and (max-width: 600px) {
+        .col-25, .col-75, input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+        }
+    }
+
+	ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        li a,
+        .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        li {
+            float: left;
+            width:20%;
+            text-align: center;
+        }
+
+        .dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: paleturquoise;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+    
+</style>
+</head>
+<body>
+
+	<ul>
+		<li><a href="index.html">Pagina inicial</a></li>
+		<li><a href="pagChinesa.html">Armas Chinesas</a></li>
+		<li><a href="pagRomana.html">Armas Romanas</a></li>
+		<li class="dropdown">
+			<a class="dropbtn" href="pagJaponesa.html">Armas Japonesas</a>
+			<div class="dropdown-content">
+				<a href="pagJaponesa.html">Kurisagama</a>
+				<a href="pagJaponesa2.html">Neko-te</a>
+				<a href="pagJaponesa3.html">Kusari-Fundo</a>
+			</div>
+		</li>
+		<li><a href="galeria.html">Galeria</a></li>
+		
+	</ul>
+
+<h2 style="text-align: center;">Formulário responsivo sobre o site das armas brancas do Erick</h2>
+<div class="container">
+	<form action="" method="GET">
+		<div class="row">
+			<div class="col-25"><label for="pnome">Nome</label></div>
+			<div class="col-75">
+				<input type="text" name="firstname" id="pnome" placeholder="Seu Nome...">
+			</div>
+		</div>	
+		<div class="row">	
+			<div class="col-25"><label for="snome">Sobrenome</label></div>
+			<div class="col-75">
+				<input type="text" name="lastname" id="snome" placeholder="Seu Sobrenome...">
+			</div>
+		</div>	
+		<div class="row">
+			<div class="col-25"><label for="estado">Avaliação Sobre o site</label></div>
+			<div class="col-75">
+				<select>
+					<option value="sp">Muito Bom</option>
+					<option value="rj">Bom</option>
+					<option value="mg">Minha avo cega faz melhor</option>
+				</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-25"><label for="coment">Comentário sobre o site</label></div>
+			<div class="col-75">
+				<textarea id="coment" name="coment" placeholder="Deixe seu comentário aqui..." style="height: 200px;"></textarea>
+			</div>
+		</div>
+		<br>
+		<div class="row">	
+			<input type="submit" name="Enviar">
+		</div>	
+	</form>
+</div>
+</body>
+</html>
